@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h5 a{
+    text-decoration: none;
+    color: black;
+}
+.link{
+    text-decoration: none;
+    color: gray;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.gallery h3{
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 420;
+}
+.row .coloumn{
+    flex: 33.3%;
+    width: auto;
+    overflow: hidden;
+}
+.gallery h3{
+   color: #362578;
+}
+.gallery img{
+    width: 420;
+}
+#navbarSupportedContent{
+    line-height: 3;
+}
+
+
+.col-md-4.col-xl-3.mx-auto.mt-5 i{
+    font-size: 25px;
+    padding-left: 5px;
+}
