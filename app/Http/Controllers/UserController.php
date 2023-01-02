@@ -70,10 +70,15 @@ class UserController extends Controller
       if(isset($credentials['image']))
       {
         $validated_image = $credentials['image'];
-        $extension =   $validated_image->extension();
-        $path = $validated_image->storeAs('images', time().'.'.$extension);
+     //   $validated_image_name = $validated_image->hashName();
+       $extension =   $validated_image->extension();
+
+     //   $path = $validated_image->storeAs('images', $validated_image_name);
+     //   $validated_image->move(public_path('images'), $validated_image_name);
+         $path = $validated_image->storeAs('images', time().'.'.$extension);
+       //  $path = $validated_image_name;
       }else{
-        $path = 'images/place.jpg';
+        $path = '';
       }
 
 

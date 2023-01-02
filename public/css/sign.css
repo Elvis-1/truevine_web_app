@@ -13,19 +13,25 @@ h5 a{
     border: 1px solid gray;
     border-radius: 10px;
 }
-.sign{
-    background: url(../img/you.jpeg);
+form{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: white;
+    padding: 30px 90px 40px 40px;
+    border-radius: 20px;
+}
+.form-control{
+    width: 100%;
+}
+.oct{
+    background: url("../img/signup2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    background-size:cover;
+     background-position: center;
 }
-form{
-   margin-top: 80px;
-}
-.info{
-    padding: 60px;
-    background: white;
-    border-radius: 20px;
+.info a{
+    width: 50%;
 }
 #navbarSupportedContent{
     line-height: 3;
@@ -34,3 +40,4 @@ form{
     font-size: 25px;
     padding-left: 5px;
 }
+

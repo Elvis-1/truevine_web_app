@@ -29,7 +29,7 @@ class UpdateUserRequest extends FormRequest
             // 'email'=>'required|unique:users',
             'phone'=>'required|numeric',
             'address'=>'required|',
-            'image'=>'nullable|image'
+            'image'=>'nullable|image|max:2000'
         ];
     }
 

@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg bg-light">
     <div class="container">
       <a class="navbar-brand" href="/">
-        <img src="{{ Vite::asset('resources/img/Rccg.png') }} " width='40' height='40' alt="logo" class="d-inline-block align-text-center">
+        <img src="{{ asset('/img/Rccg.png') }} " width='40' height='40' alt="logo" class="d-inline-block align-text-center">
         {{-- <img src="img/Rccg.png" width="40" height="40" alt="logo" class="d-inline-block align-text-center"> --}}
         TRUE VINE PARISH
       </a>

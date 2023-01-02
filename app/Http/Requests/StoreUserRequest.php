@@ -30,7 +30,7 @@ class StoreUserRequest extends FormRequest
     //  'password'=>'required|min:6',
      'phone'=>'required|numeric',
      'address'=>'required|',
-     'image'=>'nullable|image'
+     'image'=>'nullable|image|max:2000'
         ];
     }
 

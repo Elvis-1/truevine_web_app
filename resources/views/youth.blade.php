@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    @vite(["resources/css/youth.css"])
+    <link rel="stylesheet" href="css/youth.css">
+    {{-- @vite(["resources/css/youth.css"]) --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>TRUE VINE</title>
@@ -114,7 +114,11 @@
        @foreach ($found_users as $found_user)
        <div class="col-md-3 ">
         <div class="card">
-            <img src="{{ asset($found_user->photo) }}" height="200" class="card-img-top" alt="...">
+            @if ($found_user->photo  ==''|| empty($found_user->photo))
+            <img src="{{asset("images/place.jpg")}}"   class="card-img-top" alt="...">
+            @else
+            <img src="{{ asset($found_user->photo)}} "   class="card-img-top" alt="...">
+            @endif
           <div class="card-body text-center">
             <div class="card-body">
               <h5>{{$found_user->first_name}} {{$found_user->last_name}}</h5>
@@ -133,7 +137,12 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <img src="{{ asset($found_user->photo) }}" width="190px"  height="170px" class="image-modal" alt="">
+                    @if ($found_user->photo  ==''|| empty($found_user->photo))
+                    <img src="{{asset("images/place.jpg")}}"  width="190px"  height="170px" class="image-modal" alt="...">
+                    @else
+                    <img src="{{ asset($found_user->photo)}} "  width="190px"  height="170px" class="image-modal" alt="...">
+                    @endif
+
                   <div class="text">
                   <h5>Name:</h5>
                  <p>{{$found_user->first_name}} {{$found_user->last_name}}</p>
@@ -175,7 +184,12 @@
     @foreach ($users as $user)
 <div class="col-md-3 ">
     <div class="card">
-        <img src="{{ asset($user->photo) }}"  height="200" class="card-img-top" alt="...">
+         @if ($user->photo  ==''|| empty($user->photo ))
+         <img src="{{asset("images/place.jpg")}}"   class="card-img-top" alt="...">
+         @else
+         <img src="{{ asset($user->photo)}} "   class="card-img-top" alt="...">
+         @endif
+
       <div class="card-body text-center">
         <div class="card-body">
           <h5>{{$user->first_name}} {{$user->last_name}}</h5>
@@ -195,7 +209,18 @@
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                      <img src="{{ asset($user->photo) }}" width="190px"  height="170px" class="image-modal" alt="">
+                        @if ($user->photo  ==''|| empty($user->photo ))
+
+                            <img  src="{{asset("images/place.jpg")}}"  width="190px"  height="170px"  class="image-modal" alt="...">
+
+
+                        @else
+
+                            <img  src="{{ asset($user->photo)}} "   width="190px"  height="170px"  class="image-modal" alt="...">
+
+
+                        @endif
+
                       <div class="text">
                       <h5>Name:</h5>
                      <p>{{$user->first_name}} {{$user->last_name}}</p>

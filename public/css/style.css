@@ -16,10 +16,12 @@ h5 a{
 }
 .showcase{
     margin-top: 10;
-    background: url('../img/youyh.jpeg');
+    background: url('/img/youyh2.jpg');
     background-color:  rgba(0,0,0,0.6);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
+     background-position: center;
+    /* background-position:center 10px center 10px ; */
     height: 100vh;
 }
 .justify-content-center.align-items-center{
@@ -54,3 +56,10 @@ h5 a{
     font-size: 25px;
     padding-left: 5px;
 }
+.fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+    /* border: 3px solid #73AD21; */
+  }

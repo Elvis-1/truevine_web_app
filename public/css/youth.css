@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h5 a{
+    text-decoration: none;
+    color: black;
+}
+.link{
+    text-decoration: none;
+    color: gray;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.corner{
+    background: url("../img/cornery2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.card-body a{
+    background: #362578;
+    color: white;
+}
+.col-md-3{
+    padding-top: 10px;
+}
+.modal-body .text{
+    display: flex;
+    justify-content: space-between;
+}
+.modal-body .text p{
+    font-size: 16px;
+    margin-right: 20px;
+}
+.modal-body .image-modal{
+    margin-left: 120px;
+    border-radius: 70%;
+}
+#navbarSupportedContent{
+    line-height: 3;
+}
+.modal-footer a{
+    text-decoration: none;
+    padding: 8px 10px;
+    background: #362578;
+    color: white;
+    border-radius: 8px;
+}
+.modal-footer a:hover{
+    color: white;
+    background: #362578;
+}
+#staticBackdropLabel{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #362578;
+}
+.form form{
+    width: 70%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.col-md-3{
+    padding-bottom: 20px;
+}
+.col-md-4.col-lg-3.col-xl-3.mx-auto.mt-5 i{
+    font-size: 25px;
+    padding-left: 5px;
+}
+
+.twwr-container.twwr-std a {
+    background-color: #03cc0b
+  }
+
+  .twwr-wa-button {
+    background: #03cc0b
+  }
+
+  .twwr-wa-button span.agent-detail-fig {
+    color: #fff
+  }
+
+  .twwr-wa-button span.agent-name {
+    color: #fff
+  }
+
+  .twwr-wa-button.Online span.agent-label span.status {
+    color: #ffef9f
+  }
+
+  .twwr-wa-button.Online span.agent-label span.status:before {
+    background-color: #ffef9f
+  }
+
+  .twwr-container.twwr-floating ul.twwr-whatsapp-content li.available a.twwr-whatsapp-button {
+    background-color: #fff !important;
+    color: #000
+  }
+
+  .twwr-container.twwr-floating ul.twwr-whatsapp-content li a.twwr-whatsapp-button span.twwr-whatsapp-text {
+    color: #000
+  }
+
+  .twwr-container.twwr-floating ul.twwr-whatsapp-content li.available a.twwr-whatsapp-button span.twwr-whatsapp-text span.twwr-whatsapp-label span.status {
+    color: #03cc0b
+  }
+
+  .twwr-container.twwr-floating ul.twwr-whatsapp-content li.unavailable a.twwr-whatsapp-button span.twwr-whatsapp-text span.twwr-whatsapp-label span.status {
+    color: #bababa
+  }
+
+  .twwr-container.twwr-floating ul.twwr-whatsapp-content li.twwr-content-header {
+    background: #03cc0b
+  }
+
+  .twwr-container.twwr-floating ul.twwr-whatsapp-content li.twwr-content-header h5 {
+    color: #fff
+  }
+
+  .twwr-container span#contact-trigger {
+    background: #03cc0b;
+    color: #fff
+  }
+
+  .fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+    /* border: 3px solid #73AD21; */
+  }
+
+  @media (max-width: 768px) {
+    .modal-body .image-modal{
+        margin-left: 50px;
+        margin-bottom: 10px;
+        /* margin-right: 20px; */
+        border-radius: 70%;
+    }
+  }
+
+
