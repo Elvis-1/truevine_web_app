@@ -3,8 +3,9 @@
          <div class="row text-center text-md-left">
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-5 mb-5">
             <h5 class="text-uppercase mb-3 text-primary">
-              <a href=""><img src={{asset("/img/Rccg.png")}} width="40" height="40" alt="">TRUE VINE PARISH</a>
+              <a href=""><img src={{asset("/img/Rccg.png")}} width="40" height="40" alt="">       TRUE VINE PARISH</a>
             </h5>
+
             <p class=" mx-auto">
               <a class="" href="/login"><i class="fa-sharp fa-solid fa-location-dot" aria-hidden="true"></i></a>
               No. 44 mopol road inside united estate sangotedo, Ajah Lagos
